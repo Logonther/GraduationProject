@@ -99,6 +99,7 @@ nav .nav-shoppingcart-num{
     overflow: hidden;
     width: 64px;
     text-align: center;
+    z-index: 2333;
 }
 .floatingBox.show{
     background-color: rgba(255,255,255,0.5);
@@ -133,6 +134,6 @@ nav .nav-shoppingcart-num{
 }
 /*主容器*/
 .container.main{
-    padding-top: 65px;
+    padding-top: 80px;
     height: 5000px;
 }
