@@ -122,6 +122,10 @@ nav .nav-shoppingcart-num{
 .floatingBox.show .rightNav{
     display: block;
 }
+.floatingBox .rightNav li{
+    border-radius: 4px;
+    overflow: hidden;
+}
 .floatingBox .rightNav li:hover{
     background-color: #29A1FF;
 }
