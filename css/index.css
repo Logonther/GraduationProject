@@ -1,0 +1,14 @@
+/*左边分类*/
+.indexLeft .types{
+    background-color: white;
+}
+.indexLeft .types li{
+
+}
+.indexLeft .types li a{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #EEF6FA;
+}
