@@ -97,10 +97,14 @@ nav .nav-shoppingcart-num{
     right: 14px;
     border-radius: 32px;
     overflow: hidden;
+    width: 64px;
+    text-align: center;
 }
 .floatingBox.show{
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.5);
     border-radius: 4px;
+    width: 100px;
+    padding: 10px;
 }
 .floatingBox .headimg{
     display: block;
@@ -108,12 +112,24 @@ nav .nav-shoppingcart-num{
     height: 64px;
     background: url("../images/head portrait.jpg") no-repeat;
     background-size: cover;
+    margin: 0 auto;
 }
 .floatingBox .rightNav{
     display: none;
+    margin-top: 10px;
 }
 .floatingBox.show .rightNav{
     display: block;
+}
+.floatingBox .rightNav li:hover{
+    background-color: #29A1FF;
+}
+.floatingBox .rightNav li a{
+    padding: 5px;
+    display: block;
+}
+.floatingBox .rightNav li:hover a{
+    color: white;
 }
 /*主容器*/
 .container.main{
