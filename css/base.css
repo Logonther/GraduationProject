@@ -1,0 +1,122 @@
+/*------------reset css------------*/
+*,
+*::before,
+*::after{
+    /*所有的标签和伪元素全部选中*/
+    margin: 0;
+    padding: 0;
+    /*为了防止内容溢出，出现滚动条*/
+    box-sizing: border-box;
+    /*点击清除高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+}
+
+body{
+    font-size: 14px;
+    color: #333;
+    font-family: "Microsoft YaHei",sans-serif;
+    background-color: #EEF6FA;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    color: #333;
+    text-decoration: none !important;
+}
+
+input{
+    border: none;
+    outline: none;
+    /*清除input凹进去的样式*/
+    -webkit-appearance: none;
+}
+/*导航条样式重置*/
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #29a1ff;
+    background-color: transparent;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #29a1ff;
+    background-color: #080808;
+}
+/*------------common css------------*/
+.l_left{
+    float: left;
+}
+.r_right{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+.clearFix::before,
+.clearFix::after{
+    content:"";
+    display: block;/*占位*/
+    visibility: hidden; /*但是不能被看见*/
+    /*没有内容就没有宽度, 高度也需要设置为0 */
+    height: 0;
+    line-height: 0;
+    clear: both;
+}
+/*
+!*设置公共精灵图*!
+[class^="icon_"]{
+    background-image: url("../images/sprites.png");
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+}*/
+/*导航条*/
+.navbar-brand{
+    width: 150px;
+    height: 50px;
+    background: url("../images/icon_logo-v2.png") no-repeat ;
+    background-size: cover;
+}
+nav .fa-shopping-cart:before{
+    margin-right: 8px;
+    color: #29A1FF;
+}
+nav .nav-shoppingcart-num{
+    color: #29a1ff;
+    margin: 0 4px;
+}
+.nav-search{/*导航栏搜索框*/
+    width: 360px !important;
+}
+/*悬浮框*/
+.floatingBox{
+    position: fixed;
+    top: 40%;
+    right: 14px;
+    border-radius: 32px;
+    overflow: hidden;
+}
+.floatingBox.show{
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 4px;
+}
+.floatingBox .headimg{
+    display: block;
+    width: 64px;
+    height: 64px;
+    background: url("../images/head portrait.jpg") no-repeat;
+    background-size: cover;
+}
+.floatingBox .rightNav{
+    display: none;
+}
+.floatingBox.show .rightNav{
+    display: block;
+}
+/*主容器*/
+.container.main{
+    padding-top: 50px;
+    height: 5000px;
+}

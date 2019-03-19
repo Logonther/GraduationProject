@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>易办公</title>
+    <link rel="stylesheet" href="css/fcukglobal.css">
+    <link rel="stylesheet" href="css/fckubase.css">
+    <meta name="viewport" content="width=1200">
+</head>
+<body>
+<style type="text/css"></style>
+<div class="header">
+    <div class="main cf">
+        <ul class="cf fl zone-ul">
+            <li>热线电话：0755-26778888-7</li>
+        </ul>
+        <ul class="cf fl one-ul">
+            <li><a class="icon-index" href="/">首页</a></li>
+            <li><a href="/member/index">个人中心</a></li>
+            <li><a href="/member/address">收货地址</a></li>
+            <li><a class="icon-collect" href="/member/collect">我的收藏</a></li>
+        </ul>
+        <ul class="fr cf two-ul">
+            <li class="mr30 com-z-t">
+                <!-- <a class="red" href="/index/to_public">因公采购</a><span class="red">|</span><a  href="/index/to_private">因私采购</a> --></li>
+            <li class="cart-icon mr15"><a href="/cart/index">购物车<span class="cart-num pink" id="ajax_cart_num">0</span>件</a>
+            </li>
+            <li class="cf"><span class="fl mr10">配送至</span>
+                <div class="ui-select fl city-select"><select name="city_id" class="area_id select-text">
+                    <option value="0">全国</option>
+                    <option value="1">北京</option>
+                    <option value="2">上海</option>
+                    <option value="3">天津</option>
+                    <option value="4">重庆</option>
+                    <option value="5">河北</option>
+                    <option value="6">山西</option>
+                    <option value="7">河南</option>
+                    <option value="8">辽宁</option>
+                    <option value="9">吉林</option>
+                    <option value="10">黑龙江</option>
+                    <option value="11">内蒙古</option>
+                    <option value="12">江苏</option>
+                    <option value="13">山东</option>
+                    <option value="14">安徽</option>
+                    <option value="15">浙江</option>
+                    <option value="16">福建</option>
+                    <option value="17">湖北</option>
+                    <option value="18">湖南</option>
+                    <option value="19">广东</option>
+                    <option value="20">广西</option>
+                    <option value="21">江西</option>
+                    <option value="22">四川</option>
+                    <option value="23">海南</option>
+                    <option value="24">贵州</option>
+                    <option value="25">云南</option>
+                    <option value="26">西藏</option>
+                    <option value="27">陕西</option>
+                    <option value="28">甘肃</option>
+                    <option value="29">青海</option>
+                    <option value="30">宁夏</option>
+                    <option value="31">新疆</option>
+                    <option value="32">台湾</option>
+                    <option value="42">香港</option>
+                    <option value="43">澳门</option>
+                    <option value="84">钓鱼岛</option>
+                </select></div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="top">
+    <div class="main cf">
+        <div class="logo fl"><a href="/"><img class="public-logo" alt="易办公" src="images/icon_logo.png"></a>
+        </div>
+        <div class="search-block fl">
+            <div class="search-top">
+                <form action="/list/index"><input name="k" class="keyword fl" id="keyword" type="text"
+                                                  placeholder="请输入关键词，输入商品编码可直达详情页" value=""><input
+                        class="search-btn fl ml15" type="submit" value=""></form>
+            </div>
+        </div>
+        <div class="top-login fr">
+            <div class="has-login cf">
+                <div class="fl mr20"><p class="f18">您好！测试</p>
+                    <p><a class="f12 grey mt5" href="/member/logout">退出</a></p></div>
+                <div class="head-img fl"><a href="/member/index"><img alt="" src="/static/images/common_head_small.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="nav">
+    <div class="ie-nav-hack"></div>
+    <div class="main">
+        <div class="main-nav">
+            <ul class="cf">
+                <li class="list-hover "><a href="/"><i class="icon"><img alt="" src="/static/images/home_goods.png"></i>
+                    <div class="text">商品分类</div>
+                </a></li>
+                <li class="tag-hover "><a href="/tag/index"><i class="icon"><img alt=""
+                                                                                 src="/static/images/home_label.png"></i>
+                    <div class="text">商品标签</div>
+                </a></li>
+                <li class="about-hover "><a href="/about/index"><i class="icon"><img alt=""
+                                                                                     src="/static/images/home_about.png"></i>
+                    <div class="text">关于商城</div>
+                </a></li>
+                <!-- <li class="vip-hover "><a href="/vip/index"><i class="icon"><img src="/static/images/home_vip.png" alt=""></i><div class="text">VIP专区</div></a></li> -->
+                <li class="zte-hover "><a href="/news/index"><i class="icon"><img alt=""
+                                                                                  src="/static/images/home_selfemployed.png"></i>
+                    <div class="text">帮助中心</div>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="mt20">
+    <div class="cf main">
+        <div class="left-content fl">
+            <div class="index-nav">
+                <div class="sub-nav" id="index_sub_nav">
+                    <ul>
+                        <li><h1 class="title"><a href="/list/index/cid/670">电脑、办公</a></h1><i>+</i>
+                            <div class="css-j"></div>
+                            <div class="dorpdown-layer hide">
+                                <div class="ie-hack-bg"></div>
+                                <div class="content"><a class="a-block" href="/list/index/cid/670/sid/716">办公设备</a><a
+                                        class="a-block" href="/list/index/cid/670/sid/671">电脑整机</a><a class="a-block"
+                                                                                                      style="border: 0px currentColor; border-image: none;"
+                                                                                                      href="/list/index/cid/670/sid/729">文具/耗材</a><br><a
+                                        class="a-block" href="/list/index/cid/670/sid/686">外设产品</a><a class="a-block"
+                                                                                                      href="/list/index/cid/670/sid/677">电脑配件</a><a
+                                        class="a-block" style="border: 0px currentColor; border-image: none;"
+                                        href="/list/index/cid/670/sid/699">网络产品</a><br></div>
+                            </div>
+                        </li>
+                        <li><h1 class="title"><a href="/list/index/cid/737">电器五金</a><a href="/list/index/cid/652">数码</a><a
+                                href="/list/index/cid/9987">手机</a></h1><i>+</i>
+                            <div class="css-j"></div>
+                            <div class="dorpdown-layer hide">
+                                <div class="ie-hack-bg"></div>
+                                <div class="content"><a class="a-block" href="/list/index/cid/737/sid/738">生活电器</a><a
+                                        class="a-block" href="/list/index/cid/737/sid/1277">五金家装</a><a class="a-block"
+                                                                                                       style="border: 0px currentColor; border-image: none;"
+                                                                                                       href="/list/index/cid/737/sid/794">大
+                                    家 电</a><br><a class="a-block" href="/list/index/cid/737/sid/752">厨房电器</a><a
+                                        class="a-block" href="/list/index/cid/737/sid/1276">个护健康</a><a class="a-block"
+                                                                                                       style="border: 0px currentColor; border-image: none;"
+                                                                                                       href="/list/index/cid/652/sid/829">数码配件</a><br><a
+                                        class="a-block" href="/list/index/cid/652/sid/654">摄影摄像</a><a class="a-block"
+                                                                                                      href="/list/index/cid/652/sid/12345">智能设备</a><a
+                                        class="a-block" style="border: 0px currentColor; border-image: none;"
+                                        href="/list/index/cid/652/sid/828">影音</a><br><a class="a-block"
+                                                                                        href="/list/index/cid/652/sid/12346">电子教育</a><a
+                                        class="a-block" href="/list/index/cid/9987/sid/653">手机通讯</a><a class="a-block"
+                                                                                                       style="border: 0px currentColor; border-image: none;"
+                                                                                                       href="/list/index/cid/9987/sid/830">手机配件</a><br>
+                                </div>
+                            </div>
+                        </li>
+                        <li><h1 class="title"><a href="/list/index/cid/9847">家具</a><a
+                                href="/list/index/cid/6196">餐饮用具</a><a href="/list/index/cid/1620">装修装饰</a></h1><i>+</i>
+                            <div class="css-j"></div>
+                            <div class="dorpdown-layer hide">
+                                <div class="ie-hack-bg"></div>
+                                <div class="content"><a class="a-block" href="/list/index/cid/9847/sid/9853">阳台/户外</a><a
+                                        class="a-block" href="/list/index/cid/9847/sid/9852">储物家具</a><a class="a-block"
+                                                                                                        style="border: 0px currentColor; border-image: none;"
+                                                                                                        href="/list/index/cid/9847/sid/9851">书房家具</a><br><a
+                                        class="a-block" href="/list/index/cid/9847/sid/9849">客厅家具</a><a class="a-block"
+                                                                                                        href="/list/index/cid/9847/sid/9850">餐厅家具</a><a
+                                        class="a-block" style="border: 0px currentColor; border-image: none;"
+                                        href="/list/index/cid/9847/sid/9854">商业办公</a><br><a class="a-block"
+                                                                                            href="/list/index/cid/6196/sid/11143">茶具/咖啡具</a><a
+                                        class="a-block" href="/list/index/cid/6196/sid/6227">餐具</a><a class="a-block"
+                                                                                                      style="border: 0px currentColor; border-image: none;"
+                                                                                                      href="/list/index/cid/1620/sid/1624">生活日用</a><br><a
+                                        class="a-block" href="/list/index/cid/1620/sid/11158">装修软饰</a><a class="a-block"
+                                                                                                         href="/list/index/cid/1620/sid/1623">灯具</a><a
+                                        class="a-block" style="border: 0px currentColor; border-image: none;"
+                                        href="/list/index/cid/1620/sid/1622">家具</a><br><a class="a-block"
+                                                                                          style="border: 0px currentColor; border-image: none;"
+                                                                                          href="/list/index/cid/1620/sid/4957">家装建材</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><h1 class="title"><a href="/list/index/cid/1316">清洁用品</a><a
+                                href="/list/index/cid/9192">健康护具</a></h1><i>+</i>
+                            <div class="css-j"></div>
+                            <div class="dorpdown-layer hide">
+                                <div class="ie-hack-bg"></div>
+                                <div class="content"><a class="a-block" href="/list/index/cid/1316/sid/1625">清洁用品</a><a
+                                        class="a-block" href="/list/index/cid/9192/sid/12190">护理护具</a><a class="a-block"
+                                                                                                         style="border: 0px currentColor; border-image: none;"
+                                                                                                         href="/list/index/cid/9192/sid/9197">保健器械</a><br>
+                                </div>
+                            </div>
+                        </li>
+                        <li><h1 class="title"><a href="/list/index/cid/1318">文体用品</a></h1><i>+</i>
+                            <div class="css-j"></div>
+                            <div class="dorpdown-layer hide">
+                                <div class="ie-hack-bg"></div>
+                                <div class="content"><a class="a-block" href="/list/index/cid/1318/sid/12115">骑行运动</a><a
+                                        class="a-block" href="/list/index/cid/1318/sid/1462">户外装备</a><a class="a-block"
+                                                                                                        style="border: 0px currentColor; border-image: none;"
+                                                                                                        href="/list/index/cid/1318/sid/1463">健身训练</a><br><a
+                                        class="a-block" style="border: 0px currentColor; border-image: none;"
+                                        href="/list/index/cid/1318/sid/1466">体育用品</a></div>
+                            </div>
+                        </li>
+                        <li><h1 class="title"><a href="/list/index/cid/6728">汽车用品</a></h1><i>+</i>
+                            <div class="css-j"></div>
+                            <div class="dorpdown-layer hide">
+                                <div class="ie-hack-bg"></div>
+                                <div class="content"><a class="a-block" href="/list/index/cid/6728/sid/6740">车载电器</a><a
+                                        class="a-block" href="/list/index/cid/6728/sid/6742">维修保养</a><a class="a-block"
+                                                                                                        style="border: 0px currentColor; border-image: none;"
+                                                                                                        href="/list/index/cid/6728/sid/6745">汽车装饰</a><br><a
+                                        class="a-block" href="/list/index/cid/6728/sid/6747">安全自驾</a><a class="a-block"
+                                                                                                        style="border: 0px currentColor; border-image: none;"
+                                                                                                        href="/list/index/cid/6728/sid/6743">美容清洗</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><h1 class="title"><a href="/list/index/cid/1320">食品</a></h1><i>+</i>
+                            <div class="css-j"></div>
+                            <div class="dorpdown-layer hide">
+                                <div class="ie-hack-bg"></div>
+                                <div class="content"><a class="a-block" href="/list/index/cid/1320/sid/1583">休闲食品</a><a
+                                        class="a-block" href="/list/index/cid/1320/sid/1585">饮料冲调</a><a class="a-block"
+                                                                                                        style="border: 0px currentColor; border-image: none;"
+                                                                                                        href="/list/index/cid/1320/sid/12202">茗茶</a><br>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- index nav end -->
+            <div class="left-list mt30">
+                <ul>
+                    <li>
+                        <div class="img"></div>
+                    </li>
+                    <li>
+                        <div class="img"></div>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- left end -->
+        <div class="right-content fl">
+            <div class="focus-box ">
+                <div class="slider pos_a" id="slider"><!--slider开始-->
+                    <div class="slider-prev prev"></div>
+                    <div class="slider-next next"></div>
+                    <div>
+                        <ul class="slider-pic">
+                            <li style='background: url("/data/upload/index/1712/20/5a39ce49b58be.jpg") no-repeat 50% 50%; display: none; cursor: pointer;'
+                                onclick='location.href="http://"'>
+                                <div class="img"><a href="http://"></a></div>
+                            </li>
+                            <li style='background: url("/data/upload/index/1712/20/5a39be617e346.png") no-repeat 50% 50%; display: list-item; cursor: pointer;'
+                                onclick='location.href="http://"'>
+                                <div class="img"><a href="http://"></a></div>
+                            </li>
+                            <li style='background: url("/data/upload/index/1712/20/5a39be77a9579.png") no-repeat 50% 50%; display: none; cursor: pointer;'
+                                onclick='location.href="http://"'>
+                                <div class="img"><a href="http://"></a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--slider结束-->
+                <div class="slider-nav">
+                    <ul>
+                        <li>1</li>
+                        <li class="on">2</li>
+                        <li>3</li>
+                    </ul>
+                </div>
+            </div><!-- focus-box end -->
+            <div class="mt40">
+                <div class="item-head"><i class="icon"><img alt="" src="/static/images/home_recommend.png"></i>
+                    <h1 class="tc">
+                        精品推荐
+                    </h1><a class="sub-more" href="/list/index?is_best=1">More</a></div>
+                <div class="list mt20">
+                    <ul class="item-ul index-item cf">
+                        <li class="item">
+                            <div class="hover-item">
+                                <div class="img"><a href="/goods/index?id=160440"><img class="lazy"
+                                                                                       style="display: inline;"
+                                                                                       alt="齐心 中兴定制 C4502笔记本（单位：本）"
+                                                                                       src="http://eshop.zte.com.cn:80/qx-img/product/3074166/img800/1.jpg"
+                                                                                       data-original="http://eshop.zte.com.cn:80/qx-img/product/3074166/img800/1.jpg"></a>
+                                </div>
+                                <div class="cf item-footer"><p class="title"><a href="/goods/index?id=160440">齐心 中兴定制
+                                    C4502笔记本（单位：本）</a></p>
+                                    <p class="price">
+                                        ￥1.71</p>
+                                    <p class="intro">齐心 中兴定制 C4502笔记本（单位：本）</p></div>
+                            </div>
+                            <div class="item-block">
+                                <div class="img"><a href="/goods/index?id=160440"><img class="lazy"
+                                                                                       style="display: inline;"
+                                                                                       alt="齐心 中兴定制 C4502笔记本（单位：本）"
+                                                                                       src="http://eshop.zte.com.cn:80/qx-img/product/3074166/img800/1.jpg"
+                                                                                       data-original="http://eshop.zte.com.cn:80/qx-img/product/3074166/img800/1.jpg"></a>
+                                </div>
+                                <div class="cf item-footer"><p class="title"><a href="/goods/index?id=160440">齐心 中兴定制
+                                    C4502笔记本（单位：本）</a></p>
+                                    <p class="price">
+                                        ￥1.71</p></div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="hover-item">
+                                <div class="img"><a href="/goods/index?id=125990"><img class="lazy"
+                                                                                       style="display: inline;"
+                                                                                       alt="南孚(NANFU)LR03AAA聚能环7号电池碱性干电池/儿童玩具/血糖仪/挂钟/鼠标键盘遥控器电池30粒装"
+                                                                                       src="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t3700/164/689751184/149713/5ec2a536/5811b43dN17bc0398.jpg"
+                                                                                       data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t3700/164/689751184/149713/5ec2a536/5811b43dN17bc0398.jpg"></a>
+                                </div>
+                                <div class="cf item-footer"><p class="title"><a href="/goods/index?id=125990">南孚(NANFU)LR03AAA聚能环7号电池碱性干电池/儿童玩具/血糖仪/挂钟/鼠标键盘遥控器电池30粒装</a>
+                                </p>
+                                    <p class="price">
+                                        ￥54.90</p>
+                                    <p class="intro">南孚(NANFU)LR03AAA聚能环7号电池碱性干电池/儿童玩具/血糖仪/挂钟/鼠标键盘遥控器电池30粒装</p></div>
+                            </div>
+                            <div class="item-block">
+                                <div class="img"><a href="/goods/index?id=125990"><img class="lazy"
+                                                                                       style="display: inline;"
+                                                                                       alt="南孚(NANFU)LR03AAA聚能环7号电池碱性干电池/儿童玩具/血糖仪/挂钟/鼠标键盘遥控器电池30粒装"
+                                                                                       src="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t3700/164/689751184/149713/5ec2a536/5811b43dN17bc0398.jpg"
+                                                                                       data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t3700/164/689751184/149713/5ec2a536/5811b43dN17bc0398.jpg"></a>
+                                </div>
+                                <div class="cf item-footer"><p class="title"><a href="/goods/index?id=125990">南孚(NANFU)LR03AAA聚能环7号电池碱性干电池/儿童玩具/血糖仪/挂钟/鼠标键盘遥控器电池30粒装</a>
+                                </p>
+                                    <p class="price">
+                                        ￥54.90</p></div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="hover-item">
+                                <div class="img"><a href="/goods/index?id=125986"><img class="lazy"
+                                                                                       style="display: inline;"
+                                                                                       alt="南孚(NANFU)LR6AA聚能环5号电池碱性干电池/儿童玩具/血糖仪/挂钟/鼠标键盘遥控器电池30粒装"
+                                                                                       src="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t3739/56/726065884/129026/9c87613e/5811b38bNd51217a1.jpg"
+                                                                                       data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t3739/56/726065884/129026/9c87613e/5811b38bNd51217a1.jpg"></a>
+                                </div>
+                                <div class="cf item-footer"><p class="title"><a href="/goods/index?id=125986">南孚(NANFU)LR6AA聚能环5号电池碱性干电池/儿童玩具/血糖仪/挂钟/鼠标键盘遥控器电池30粒装</a>
+                                </p>
+                                    <p class="price">
+                                        ￥54.00</p>
+                                    <p class="intro">南孚(NANFU)LR6AA聚能环5号电池碱性干电池/儿童玩具/血糖仪/挂钟/鼠标键盘遥控器电池30粒装</p></div>
+                            </div>
+                            <div class="item-block">
+                                <div class="img"><a href="/goods/index?id=125986"><img class="lazy"
+                                                                                       style="display: inline;"
+                                                                                       alt="南孚(NANFU)LR6AA聚能环5号电池碱性干电池/儿童玩具/血糖仪/挂钟/鼠标键盘遥控器电池30粒装"
+                                                                                       src="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t3739/56/726065884/129026/9c87613e/5811b38bNd51217a1.jpg"
+                                                                                       data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t3739/56/726065884/129026/9c87613e/5811b38bNd51217a1.jpg"></a>
+                                </div>
+                                <div class="cf item-footer"><p class="title"><a href="/goods/index?id=125986">南孚(NANFU)LR6AA聚能环5号电池碱性干电池/儿童玩具/血糖仪/挂钟/鼠标键盘遥控器电池30粒装</a>
+                                </p>
+                                    <p class="price">
+                                        ￥54.00</p></div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="hover-item">
+                                <div class="img"><a href="/goods/index?id=122671"><img class="lazy"
+                                                                                       style="display: inline;"
+                                                                                       alt="得力（deli）8740 磁性钢化1000mm*1500mm悬挂式办公/会议玻璃白板"
+                                                                                       src="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t20926/100/282803765/187155/ca2f1a49/5b07d702N37e6f037.jpg"
+                                                                                       data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t20926/100/282803765/187155/ca2f1a49/5b07d702N37e6f037.jpg"></a>
+                                </div>
+                                <div class="cf item-footer"><p class="title"><a href="/goods/index?id=122671">得力（deli）8740
+                                    磁性钢化1000mm*1500mm悬挂式办公/会议玻璃白板</a></p>
+                                    <p class="price">
+                                        ￥399.00</p>
+                                    <p class="intro">得力（deli）8740 磁性钢化1000mm*1500mm悬挂式办公/会议玻璃白板</p></div>
+                            </div>
+                            <div class="item-block">
+                                <div class="img"><a href="/goods/index?id=122671"><img class="lazy"
+                                                                                       style="display: inline;"
+                                                                                       alt="得力（deli）8740 磁性钢化1000mm*1500mm悬挂式办公/会议玻璃白板"
+                                                                                       src="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t20926/100/282803765/187155/ca2f1a49/5b07d702N37e6f037.jpg"
+                                                                                       data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t20926/100/282803765/187155/ca2f1a49/5b07d702N37e6f037.jpg"></a>
+                                </div>
+                                <div class="cf item-footer"><p class="title"><a href="/goods/index?id=122671">得力（deli）8740
+                                    磁性钢化1000mm*1500mm悬挂式办公/会议玻璃白板</a></p>
+                                    <p class="price">
+                                        ￥399.00</p></div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="hover-item">
+                                <div class="img"><a href="/goods/index?id=118401"><img class="lazy"
+                                                                                       style="display: inline;"
+                                                                                       alt="晨光（M&amp;G） 单头易擦白板笔会议笔10支装黑色 AWMY2202"
+                                                                                       src="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t3109/304/4490630688/209415/9fd85f79/5847ac1cNd825e47f.jpg"
+                                                                                       data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t3109/304/4490630688/209415/9fd85f79/5847ac1cNd825e47f.jpg"></a>
+                                </div>
+                                <div class="cf item-footer"><p class="title"><a href="/goods/index?id=118401">晨光（M&amp;G）
+                                    单头易擦白板笔会议笔10支装黑色 AWMY2202</a></p>
+                                    <p class="price">
+                                        ￥9.00</p>
+                                    <p class="intro">晨光（M&amp;G） 单头易擦白板笔会议笔10支装黑色 AWMY2202</p></div>
+                            </div>
+                            <div class="item-block">
+                                <div class="img"><a href="/goods/index?id=118401"><img class="lazy"
+                                                                                       style="display: inline;"
+                                                                                       alt="晨光（M&amp;G） 单头易擦白板笔会议笔10支装黑色 AWMY2202"
+                                                                                       src="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t3109/304/4490630688/209415/9fd85f79/5847ac1cNd825e47f.jpg"
+                                                                                       data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t3109/304/4490630688/209415/9fd85f79/5847ac1cNd825e47f.jpg"></a>
+                                </div>
+                                <div class="cf item-footer"><p class="title"><a href="/goods/index?id=118401">晨光（M&amp;G）
+                                    单头易擦白板笔会议笔10支装黑色 AWMY2202</a></p>
+                                    <p class="price">
+                                        ￥9.00</p></div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="hover-item">
+                                <div class="img"><a href="/goods/index?id=118358"><img class="lazy"
+                                                                                       style="display: inline;"
+                                                                                       alt="AUCS 200*90cm 软白板贴涂鸦墙贴纸 办公教学家用写字板磁性白板可擦 RBB2090"
+                                                                                       src="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t1855/139/2900233117/325596/48cd3110/571f1144N619a3e8b.jpg"
+                                                                                       data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t1855/139/2900233117/325596/48cd3110/571f1144N619a3e8b.jpg"></a>
+                                </div>
+                                <div class="cf item-footer"><p class="title"><a href="/goods/index?id=118358">AUCS
+                                    200*90cm 软白板贴涂鸦墙贴纸 办公教学家用写字板磁性白板可擦 RBB2090</a></p>
+                                    <p class="price">
+                                        ￥159.00</p>
+                                    <p class="intro">AUCS 200*90cm 软白板贴涂鸦墙贴纸 办公教学家用写字板磁性白板可擦 RBB2090</p></div>
+                            </div>
+                            <div class="item-block">
+                                <div class="img"><a href="/goods/index?id=118358"><img class="lazy"
+                                                                                       style="display: inline;"
+                                                                                       alt="AUCS 200*90cm 软白板贴涂鸦墙贴纸 办公教学家用写字板磁性白板可擦 RBB2090"
+                                                                                       src="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t1855/139/2900233117/325596/48cd3110/571f1144N619a3e8b.jpg"
+                                                                                       data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t1855/139/2900233117/325596/48cd3110/571f1144N619a3e8b.jpg"></a>
+                                </div>
+                                <div class="cf item-footer"><p class="title"><a href="/goods/index?id=118358">AUCS
+                                    200*90cm 软白板贴涂鸦墙贴纸 办公教学家用写字板磁性白板可擦 RBB2090</a></p>
+                                    <p class="price">
+                                        ￥159.00</p></div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="hover-item">
+                                <div class="img"><a href="/goods/index?id=56546"><img class="lazy"
+                                                                                      style="display: inline;"
+                                                                                      alt="联丰(lianfeng) 电脑椅 人体工学电脑椅子 办公椅 家用转椅 灰色X-12T"
+                                                                                      src="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t3271/212/707863100/204123/321ee39/57bd3d09N9a513f9f.jpg"
+                                                                                      data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t3271/212/707863100/204123/321ee39/57bd3d09N9a513f9f.jpg"></a>
+                                </div>
+                                <div class="cf item-footer"><p class="title"><a href="/goods/index?id=56546">联丰(lianfeng)
+                                    电脑椅 人体工学电脑椅子 办公椅 家用转椅 灰色X-12T</a></p>
+                                    <p class="price">
+                                        ￥369.00</p>
+                                    <p class="intro">联丰(lianfeng) 电脑椅 人体工学电脑椅子 办公椅 家用转椅 灰色X-12T</p></div>
+                            </div>
+                            <div class="item-block">
+                                <div class="img"><a href="/goods/index?id=56546"><img class="lazy"
+                                                                                      style="display: inline;"
+                                                                                      alt="联丰(lianfeng) 电脑椅 人体工学电脑椅子 办公椅 家用转椅 灰色X-12T"
+                                                                                      src="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t3271/212/707863100/204123/321ee39/57bd3d09N9a513f9f.jpg"
+                                                                                      data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t3271/212/707863100/204123/321ee39/57bd3d09N9a513f9f.jpg"></a>
+                                </div>
+                                <div class="cf item-footer"><p class="title"><a href="/goods/index?id=56546">联丰(lianfeng)
+                                    电脑椅 人体工学电脑椅子 办公椅 家用转椅 灰色X-12T</a></p>
+                                    <p class="price">
+                                        ￥369.00</p></div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="hover-item">
+                                <div class="img"><a href="/goods/index?id=47237"><img class="lazy"
+                                                                                      style="display: inline;"
+                                                                                      alt="硕美科—声丽（SENICC）MX-112 耳塞式电脑耳机 带线控可调节音量 耳麦 双插头 黑色"
+                                                                                      src="http://eshop.zte.com.cn:80/jd-img/vc/g9/M03/0E/08/rBEHaVCh6rkIAAAAAADBHn_8pB0AACyOgPolp4AAME2082.jpg"
+                                                                                      data-original="http://eshop.zte.com.cn:80/jd-img/vc/g9/M03/0E/08/rBEHaVCh6rkIAAAAAADBHn_8pB0AACyOgPolp4AAME2082.jpg"></a>
+                                </div>
+                                <div class="cf item-footer"><p class="title"><a href="/goods/index?id=47237">硕美科—声丽（SENICC）MX-112
+                                    耳塞式电脑耳机 带线控可调节音量 耳麦 双插头 黑色</a></p>
+                                    <p class="price">
+                                        ￥17.00</p>
+                                    <p class="intro">硕美科—声丽（SENICC）MX-112 耳塞式电脑耳机 带线控可调节音量 耳麦 双插头 黑色</p></div>
+                            </div>
+                            <div class="item-block">
+                                <div class="img"><a href="/goods/index?id=47237"><img class="lazy"
+                                                                                      style="display: inline;"
+                                                                                      alt="硕美科—声丽（SENICC）MX-112 耳塞式电脑耳机 带线控可调节音量 耳麦 双插头 黑色"
+                                                                                      src="http://eshop.zte.com.cn:80/jd-img/vc/g9/M03/0E/08/rBEHaVCh6rkIAAAAAADBHn_8pB0AACyOgPolp4AAME2082.jpg"
+                                                                                      data-original="http://eshop.zte.com.cn:80/jd-img/vc/g9/M03/0E/08/rBEHaVCh6rkIAAAAAADBHn_8pB0AACyOgPolp4AAME2082.jpg"></a>
+                                </div>
+                                <div class="cf item-footer"><p class="title"><a href="/goods/index?id=47237">硕美科—声丽（SENICC）MX-112
+                                    耳塞式电脑耳机 带线控可调节音量 耳麦 双插头 黑色</a></p>
+                                    <p class="price">
+                                        ￥17.00</p></div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="hover-item">
+                                <div class="img"><a href="/goods/index?id=30609"><img class="lazy"
+                                                                                      style="display: inline;"
+                                                                                      alt="得力（deli）8726 彩色白板磁钉/吸铁石/磁铁φ40mm 24粒/筒"
+                                                                                      src="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t1819/275/642259227/112426/2d32073f/55d6e530N2c332343.jpg"
+                                                                                      data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t1819/275/642259227/112426/2d32073f/55d6e530N2c332343.jpg"></a>
+                                </div>
+                                <div class="cf item-footer"><p class="title"><a href="/goods/index?id=30609">得力（deli）8726
+                                    彩色白板磁钉/吸铁石/磁铁φ40mm 24粒/筒</a></p>
+                                    <p class="price">
+                                        ￥18.00</p>
+                                    <p class="intro">得力（deli）8726 彩色白板磁钉/吸铁石/磁铁φ40mm 24粒/筒</p></div>
+                            </div>
+                            <div class="item-block">
+                                <div class="img"><a href="/goods/index?id=30609"><img class="lazy"
+                                                                                      style="display: inline;"
+                                                                                      alt="得力（deli）8726 彩色白板磁钉/吸铁石/磁铁φ40mm 24粒/筒"
+                                                                                      src="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t1819/275/642259227/112426/2d32073f/55d6e530N2c332343.jpg"
+                                                                                      data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t1819/275/642259227/112426/2d32073f/55d6e530N2c332343.jpg"></a>
+                                </div>
+                                <div class="cf item-footer"><p class="title"><a href="/goods/index?id=30609">得力（deli）8726
+                                    彩色白板磁钉/吸铁石/磁铁φ40mm 24粒/筒</a></p>
+                                    <p class="price">
+                                        ￥18.00</p></div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="hover-item">
+                                <div class="img"><a href="/goods/index?id=30360"><img class="lazy"
+                                                                                      style="display: inline;"
+                                                                                      alt="得力（deli） 7362A4 珊瑚海复印纸 70g 500张/包 单包装"
+                                                                                      src="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t2182/269/1426499678/124156/9cb947e6/565cffe2Nac4efa2b.jpg"
+                                                                                      data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t2182/269/1426499678/124156/9cb947e6/565cffe2Nac4efa2b.jpg"></a>
+                                </div>
+                                <div class="cf item-footer"><p class="title"><a href="/goods/index?id=30360">得力（deli）
+                                    7362A4 珊瑚海复印纸 70g 500张/包 单包装</a></p>
+                                    <p class="price">
+                                        ￥22.00</p>
+                                    <p class="intro">得力（deli） 7362A4 珊瑚海复印纸 70g 500张/包 单包装</p></div>
+                            </div>
+                            <div class="item-block">
+                                <div class="img"><a href="/goods/index?id=30360"><img class="lazy"
+                                                                                      style="display: inline;"
+                                                                                      alt="得力（deli） 7362A4 珊瑚海复印纸 70g 500张/包 单包装"
+                                                                                      src="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t2182/269/1426499678/124156/9cb947e6/565cffe2Nac4efa2b.jpg"
+                                                                                      data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t2182/269/1426499678/124156/9cb947e6/565cffe2Nac4efa2b.jpg"></a>
+                                </div>
+                                <div class="cf item-footer"><p class="title"><a href="/goods/index?id=30360">得力（deli）
+                                    7362A4 珊瑚海复印纸 70g 500张/包 单包装</a></p>
+                                    <p class="price">
+                                        ￥22.00</p></div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="hover-item">
+                                <div class="img"><a href="/goods/index?id=30358"><img class="lazy"
+                                                                                      style="display: inline;"
+                                                                                      alt="得力（deli）7378 珊瑚海80gA4复印纸 5包/箱"
+                                                                                      src="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t2359/227/1973490362/453236/4241b8dc/567ba1b1N2522b027.jpg"
+                                                                                      data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t2359/227/1973490362/453236/4241b8dc/567ba1b1N2522b027.jpg"></a>
+                                </div>
+                                <div class="cf item-footer"><p class="title"><a href="/goods/index?id=30358">得力（deli）7378
+                                    珊瑚海80gA4复印纸 5包/箱</a></p>
+                                    <p class="price">
+                                        ￥116.75</p>
+                                    <p class="intro">得力（deli）7378 珊瑚海80gA4复印纸 5包/箱</p></div>
+                            </div>
+                            <div class="item-block">
+                                <div class="img"><a href="/goods/index?id=30358"><img class="lazy"
+                                                                                      style="display: inline;"
+                                                                                      alt="得力（deli）7378 珊瑚海80gA4复印纸 5包/箱"
+                                                                                      src="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t2359/227/1973490362/453236/4241b8dc/567ba1b1N2522b027.jpg"
+                                                                                      data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t2359/227/1973490362/453236/4241b8dc/567ba1b1N2522b027.jpg"></a>
+                                </div>
+                                <div class="cf item-footer"><p class="title"><a href="/goods/index?id=30358">得力（deli）7378
+                                    珊瑚海80gA4复印纸 5包/箱</a></p>
+                                    <p class="price">
+                                        ￥116.75</p></div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="hover-item">
+                                <div class="img"><a href="/goods/index?id=30341"><img class="lazy"
+                                                                                      style="display: inline;"
+                                                                                      alt="得力（deli）7360 珊瑚海70gA4复印纸 8包/箱"
+                                                                                      src="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t895/154/362754323/148541/d4da89b3/551b910eNb8d76c69.jpg"
+                                                                                      data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t895/154/362754323/148541/d4da89b3/551b910eNb8d76c69.jpg"></a>
+                                </div>
+                                <div class="cf item-footer"><p class="title"><a href="/goods/index?id=30341">得力（deli）7360
+                                    珊瑚海70gA4复印纸 8包/箱</a></p>
+                                    <p class="price">
+                                        ￥165.97</p>
+                                    <p class="intro">得力（deli）7360 珊瑚海70gA4复印纸 8包/箱</p></div>
+                            </div>
+                            <div class="item-block">
+                                <div class="img"><a href="/goods/index?id=30341"><img class="lazy"
+                                                                                      style="display: inline;"
+                                                                                      alt="得力（deli）7360 珊瑚海70gA4复印纸 8包/箱"
+                                                                                      src="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t895/154/362754323/148541/d4da89b3/551b910eNb8d76c69.jpg"
+                                                                                      data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t895/154/362754323/148541/d4da89b3/551b910eNb8d76c69.jpg"></a>
+                                </div>
+                                <div class="cf item-footer"><p class="title"><a href="/goods/index?id=30341">得力（deli）7360
+                                    珊瑚海70gA4复印纸 8包/箱</a></p>
+                                    <p class="price">
+                                        ￥165.97</p></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt40">
+                <div class="item-head"><i class="icon"><img alt="" src="/static/images/home_officesupplies.png"></i>
+                    <h1 class="tc">电脑、办公</h1><a class="sub-more" href="/list/index/cid/670">More</a></div>
+                <div class="mt20">
+                    <div class="list">
+                        <ul class="item-ul index-item cf">
+                            <li class="item">
+                                <div class="hover-item">
+                                    <div class="img"><a href="/goods/index/id/24320"><img class="lazy"
+                                                                                          style="display: inline;"
+                                                                                          alt="广博(GuangBo)10本装60页A5办公记事本子/软抄本/日记本 颜色随机 GBR0791"
+                                                                                          src="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t2800/293/18227572/166860/818a64b5/56fb959cN9d16491a.jpg"
+                                                                                          data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t2800/293/18227572/166860/818a64b5/56fb959cN9d16491a.jpg"></a>
+                                    </div>
+                                    <div class="cf item-footer"><p class="title"><a href="/goods/index/id/24320">广博(GuangBo)10本装60页A5办公记事本子/软抄本/日记本
+                                        颜色随机 GBR0791</a></p>
+                                        <p class="price">
+                                            ￥20.00</p>
+                                        <p class="intro">广博(GuangBo)10本装60页A5办公记事本子/软抄本/日记本 颜色随机 GBR0791</p></div>
+                                </div>
+                                <div class="item-block">
+                                    <div class="img"><a href="/goods/index/id/24320"><img class="lazy"
+                                                                                          alt="广博(GuangBo)10本装60页A5办公记事本子/软抄本/日记本 颜色随机 GBR0791"
+                                                                                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                                                          data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t2800/293/18227572/166860/818a64b5/56fb959cN9d16491a.jpg"></a>
+                                    </div>
+                                    <div class="cf item-footer"><p class="title"><a href="/goods/index/id/24320">广博(GuangBo)10本装60页A5办公记事本子/软抄本/日记本
+                                        颜色随机 GBR0791</a></p>
+                                        <p class="price">
+                                            ￥20.00</p></div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="hover-item">
+                                    <div class="img"><a href="/goods/index/id/24323"><img class="lazy"
+                                                                                          alt="广博(GuangBo)10本装40页A5办公记事本子/软抄本/日记本 颜色随机 GBR0790"
+                                                                                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                                                          data-original="http://eshop.zte.com.cn:80/jd-img/vc/g14/M07/04/08/rBEhVlKb938IAAAAAAENCOXude8AAGUywHn5wsAAQ0g625.jpg"></a>
+                                    </div>
+                                    <div class="cf item-footer"><p class="title"><a href="/goods/index/id/24323">广博(GuangBo)10本装40页A5办公记事本子/软抄本/日记本
+                                        颜色随机 GBR0790</a></p>
+                                        <p class="price">
+                                            ￥15.00</p>
+                                        <p class="intro">广博(GuangBo)10本装40页A5办公记事本子/软抄本/日记本 颜色随机 GBR0790</p></div>
+                                </div>
+                                <div class="item-block">
+                                    <div class="img"><a href="/goods/index/id/24323"><img class="lazy"
+                                                                                          alt="广博(GuangBo)10本装40页A5办公记事本子/软抄本/日记本 颜色随机 GBR0790"
+                                                                                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                                                          data-original="http://eshop.zte.com.cn:80/jd-img/vc/g14/M07/04/08/rBEhVlKb938IAAAAAAENCOXude8AAGUywHn5wsAAQ0g625.jpg"></a>
+                                    </div>
+                                    <div class="cf item-footer"><p class="title"><a href="/goods/index/id/24323">广博(GuangBo)10本装40页A5办公记事本子/软抄本/日记本
+                                        颜色随机 GBR0790</a></p>
+                                        <p class="price">
+                                            ￥15.00</p></div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="hover-item">
+                                    <div class="img"><a href="/goods/index/id/28935"><img class="lazy"
+                                                                                          alt="得力（deli）9561 加厚型一次性水杯/纸杯9盎司 250ML 100只装蓝色"
+                                                                                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                                                          data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t1882/49/1080629877/366922/c879053d/563d4920Na8ba558a.jpg"></a>
+                                    </div>
+                                    <div class="cf item-footer"><p class="title"><a href="/goods/index/id/28935">得力（deli）9561
+                                        加厚型一次性水杯/纸杯9盎司 250ML 100只装蓝色</a></p>
+                                        <p class="price">
+                                            ￥16.86</p>
+                                        <p class="intro">得力（deli）9561 加厚型一次性水杯/纸杯9盎司 250ML 100只装蓝色</p></div>
+                                </div>
+                                <div class="item-block">
+                                    <div class="img"><a href="/goods/index/id/28935"><img class="lazy"
+                                                                                          alt="得力（deli）9561 加厚型一次性水杯/纸杯9盎司 250ML 100只装蓝色"
+                                                                                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                                                          data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t1882/49/1080629877/366922/c879053d/563d4920Na8ba558a.jpg"></a>
+                                    </div>
+                                    <div class="cf item-footer"><p class="title"><a href="/goods/index/id/28935">得力（deli）9561
+                                        加厚型一次性水杯/纸杯9盎司 250ML 100只装蓝色</a></p>
+                                        <p class="price">
+                                            ￥16.86</p></div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="hover-item">
+                                    <div class="img"><a href="/goods/index/id/21005"><img class="lazy"
+                                                                                          alt="得力（deli）33106 好写耐用卡装中性笔 10支/卡 0.5mm黑色 附赠10支笔芯"
+                                                                                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                                                          data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t1789/62/594670390/183158/8aa1ff02/55d68b06N56fffe38.jpg"></a>
+                                    </div>
+                                    <div class="cf item-footer"><p class="title"><a href="/goods/index/id/21005">得力（deli）33106
+                                        好写耐用卡装中性笔 10支/卡 0.5mm黑色 附赠10支笔芯</a></p>
+                                        <p class="price">
+                                            ￥9.71</p>
+                                        <p class="intro">得力（deli）33106 好写耐用卡装中性笔 10支/卡 0.5mm黑色 附赠10支笔芯</p></div>
+                                </div>
+                                <div class="item-block">
+                                    <div class="img"><a href="/goods/index/id/21005"><img class="lazy"
+                                                                                          alt="得力（deli）33106 好写耐用卡装中性笔 10支/卡 0.5mm黑色 附赠10支笔芯"
+                                                                                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                                                          data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t1789/62/594670390/183158/8aa1ff02/55d68b06N56fffe38.jpg"></a>
+                                    </div>
+                                    <div class="cf item-footer"><p class="title"><a href="/goods/index/id/21005">得力（deli）33106
+                                        好写耐用卡装中性笔 10支/卡 0.5mm黑色 附赠10支笔芯</a></p>
+                                        <p class="price">
+                                            ￥9.71</p></div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="hover-item">
+                                    <div class="img"><a href="/goods/index/id/21533"><img class="lazy"
+                                                                                          alt="得力(deli)7419 莱茵河80克A4复印纸 5包/箱 "
+                                                                                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                                                          data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t2212/110/1498158468/322270/b79b4d48/565cfe35N92343331.jpg"></a>
+                                    </div>
+                                    <div class="cf item-footer"><p class="title"><a href="/goods/index/id/21533">得力(deli)7419
+                                        莱茵河80克A4复印纸 5包/箱 </a></p>
+                                        <p class="price">
+                                            ￥129.40</p>
+                                        <p class="intro">得力(deli)7419 莱茵河80克A4复印纸 5包/箱 </p></div>
+                                </div>
+                                <div class="item-block">
+                                    <div class="img"><a href="/goods/index/id/21533"><img class="lazy"
+                                                                                          alt="得力(deli)7419 莱茵河80克A4复印纸 5包/箱 "
+                                                                                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                                                          data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t2212/110/1498158468/322270/b79b4d48/565cfe35N92343331.jpg"></a>
+                                    </div>
+                                    <div class="cf item-footer"><p class="title"><a href="/goods/index/id/21533">得力(deli)7419
+                                        莱茵河80克A4复印纸 5包/箱 </a></p>
+                                        <p class="price">
+                                            ￥129.40</p></div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="hover-item">
+                                    <div class="img"><a href="/goods/index/id/21539"><img class="lazy"
+                                                                                          alt="得力（deli） 7401A4 莱茵河复印纸 70g 500张/包 5包/箱"
+                                                                                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                                                          data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t1978/335/1870434450/458372/27429e5e/567b9e2cNec36a9d9.jpg"></a>
+                                    </div>
+                                    <div class="cf item-footer"><p class="title"><a href="/goods/index/id/21539">得力（deli）
+                                        7401A4 莱茵河复印纸 70g 500张/包 5包/箱</a></p>
+                                        <p class="price">
+                                            ￥113.20</p>
+                                        <p class="intro">得力（deli） 7401A4 莱茵河复印纸 70g 500张/包 5包/箱</p></div>
+                                </div>
+                                <div class="item-block">
+                                    <div class="img"><a href="/goods/index/id/21539"><img class="lazy"
+                                                                                          alt="得力（deli） 7401A4 莱茵河复印纸 70g 500张/包 5包/箱"
+                                                                                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                                                          data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t1978/335/1870434450/458372/27429e5e/567b9e2cNec36a9d9.jpg"></a>
+                                    </div>
+                                    <div class="cf item-footer"><p class="title"><a href="/goods/index/id/21539">得力（deli）
+                                        7401A4 莱茵河复印纸 70g 500张/包 5包/箱</a></p>
+                                        <p class="price">
+                                            ￥113.20</p></div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="hover-item">
+                                    <div class="img"><a href="/goods/index/id/26923"><img class="lazy"
+                                                                                          alt="国誉(KOKUYO)Gambol系列WCN-S6807 B5 80页 螺旋装订本/记事本/软抄本 6本装"
+                                                                                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                                                          data-original="http://eshop.zte.com.cn:80/jd-img/vc/g16/M00/0A/05/rBEbRlN5cwQIAAAAAAH7v_vtS9oAAB-rgLNSskAAfvX603.jpg"></a>
+                                    </div>
+                                    <div class="cf item-footer"><p class="title"><a href="/goods/index/id/26923">国誉(KOKUYO)Gambol系列WCN-S6807
+                                        B5 80页 螺旋装订本/记事本/软抄本 6本装</a></p>
+                                        <p class="price">
+                                            ￥51.30</p>
+                                        <p class="intro">国誉(KOKUYO)Gambol系列WCN-S6807 B5 80页 螺旋装订本/记事本/软抄本 6本装</p></div>
+                                </div>
+                                <div class="item-block">
+                                    <div class="img"><a href="/goods/index/id/26923"><img class="lazy"
+                                                                                          alt="国誉(KOKUYO)Gambol系列WCN-S6807 B5 80页 螺旋装订本/记事本/软抄本 6本装"
+                                                                                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                                                          data-original="http://eshop.zte.com.cn:80/jd-img/vc/g16/M00/0A/05/rBEbRlN5cwQIAAAAAAH7v_vtS9oAAB-rgLNSskAAfvX603.jpg"></a>
+                                    </div>
+                                    <div class="cf item-footer"><p class="title"><a href="/goods/index/id/26923">国誉(KOKUYO)Gambol系列WCN-S6807
+                                        B5 80页 螺旋装订本/记事本/软抄本 6本装</a></p>
+                                        <p class="price">
+                                            ￥51.30</p></div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="hover-item">
+                                    <div class="img"><a href="/goods/index/id/21555"><img class="lazy"
+                                                                                          alt="晨光（M&amp;G）经典办公按动子弹头中性笔签字笔水笔0.5mm12支装 黑色 K35"
+                                                                                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                                                          data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t2287/194/2429280605/332282/d926c700/5707afdbNf37b47c8.jpg"></a>
+                                    </div>
+                                    <div class="cf item-footer"><p class="title"><a href="/goods/index/id/21555">晨光（M&amp;G）经典办公按动子弹头中性笔签字笔水笔0.5mm12支装
+                                        黑色 K35</a></p>
+                                        <p class="price">
+                                            ￥22.00</p>
+                                        <p class="intro">晨光（M&amp;G）经典办公按动子弹头中性笔签字笔水笔0.5mm12支装 黑色 K35</p></div>
+                                </div>
+                                <div class="item-block">
+                                    <div class="img"><a href="/goods/index/id/21555"><img class="lazy"
+                                                                                          alt="晨光（M&amp;G）经典办公按动子弹头中性笔签字笔水笔0.5mm12支装 黑色 K35"
+                                                                                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                                                          data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t2287/194/2429280605/332282/d926c700/5707afdbNf37b47c8.jpg"></a>
+                                    </div>
+                                    <div class="cf item-footer"><p class="title"><a href="/goods/index/id/21555">晨光（M&amp;G）经典办公按动子弹头中性笔签字笔水笔0.5mm12支装
+                                        黑色 K35</a></p>
+                                        <p class="price">
+                                            ￥22.00</p></div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="hover-item">
+                                    <div class="img"><a href="/goods/index/id/2378"><img class="lazy"
+                                                                                         alt="比比牛（B.B.NEW）BBND6090 畅写系列 办公通用款书写白板"
+                                                                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                                                         data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t1501/357/962547205/95443/2b93c44/55b5c2b9N26ab39d0.jpg"></a>
+                                    </div>
+                                    <div class="cf item-footer"><p class="title"><a href="/goods/index/id/2378">比比牛（B.B.NEW）BBND6090
+                                        畅写系列 办公通用款书写白板</a></p>
+                                        <p class="price">
+                                            ￥69.00</p>
+                                        <p class="intro">比比牛（B.B.NEW）BBND6090 畅写系列 办公通用款书写白板</p></div>
+                                </div>
+                                <div class="item-block">
+                                    <div class="img"><a href="/goods/index/id/2378"><img class="lazy"
+                                                                                         alt="比比牛（B.B.NEW）BBND6090 畅写系列 办公通用款书写白板"
+                                                                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                                                         data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t1501/357/962547205/95443/2b93c44/55b5c2b9N26ab39d0.jpg"></a>
+                                    </div>
+                                    <div class="cf item-footer"><p class="title"><a href="/goods/index/id/2378">比比牛（B.B.NEW）BBND6090
+                                        畅写系列 办公通用款书写白板</a></p>
+                                        <p class="price">
+                                            ￥69.00</p></div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="hover-item">
+                                    <div class="img"><a href="/goods/index/id/24956"><img class="lazy"
+                                                                                          alt="得力(deli)60支0.5mm黑色中性笔水笔 子弹头签字笔 33109"
+                                                                                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                                                          data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t3466/214/144348769/368352/f2009ce9/58009136N60eb7ac8.jpg"></a>
+                                    </div>
+                                    <div class="cf item-footer"><p class="title"><a href="/goods/index/id/24956">得力(deli)60支0.5mm黑色中性笔水笔
+                                        子弹头签字笔 33109</a></p>
+                                        <p class="price">
+                                            ￥38.22</p>
+                                        <p class="intro">得力(deli)60支0.5mm黑色中性笔水笔 子弹头签字笔 33109</p></div>
+                                </div>
+                                <div class="item-block">
+                                    <div class="img"><a href="/goods/index/id/24956"><img class="lazy"
+                                                                                          alt="得力(deli)60支0.5mm黑色中性笔水笔 子弹头签字笔 33109"
+                                                                                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                                                          data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t3466/214/144348769/368352/f2009ce9/58009136N60eb7ac8.jpg"></a>
+                                    </div>
+                                    <div class="cf item-footer"><p class="title"><a href="/goods/index/id/24956">得力(deli)60支0.5mm黑色中性笔水笔
+                                        子弹头签字笔 33109</a></p>
+                                        <p class="price">
+                                            ￥38.22</p></div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="hover-item">
+                                    <div class="img"><a href="/goods/index/id/21121"><img class="lazy"
+                                                                                          alt="得力(deli)S01黑色0.5mm经典办公按动中性笔水笔 子弹头签字笔 12支/盒"
+                                                                                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                                                          data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t4231/114/1373063995/311341/1feeaaad/58c1000cN5c448e8d.jpg"></a>
+                                    </div>
+                                    <div class="cf item-footer"><p class="title"><a href="/goods/index/id/21121">得力(deli)S01黑色0.5mm经典办公按动中性笔水笔
+                                        子弹头签字笔 12支/盒</a></p>
+                                        <p class="price">
+                                            ￥21.69</p>
+                                        <p class="intro">得力(deli)S01黑色0.5mm经典办公按动中性笔水笔 子弹头签字笔 12支/盒</p></div>
+                                </div>
+                                <div class="item-block">
+                                    <div class="img"><a href="/goods/index/id/21121"><img class="lazy"
+                                                                                          alt="得力(deli)S01黑色0.5mm经典办公按动中性笔水笔 子弹头签字笔 12支/盒"
+                                                                                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                                                          data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t4231/114/1373063995/311341/1feeaaad/58c1000cN5c448e8d.jpg"></a>
+                                    </div>
+                                    <div class="cf item-footer"><p class="title"><a href="/goods/index/id/21121">得力(deli)S01黑色0.5mm经典办公按动中性笔水笔
+                                        子弹头签字笔 12支/盒</a></p>
+                                        <p class="price">
+                                            ￥21.69</p></div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="hover-item">
+                                    <div class="img"><a href="/goods/index/id/21391"><img class="lazy"
+                                                                                          alt="齐心(COMIX)BP102R 防滑握手圆珠笔0.7mm 60支装 蓝色 新老包装随机"
+                                                                                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                                                          data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t1903/333/1403448857/146203/4704f06e/569ca244N8d28e92c.jpg"></a>
+                                    </div>
+                                    <div class="cf item-footer"><p class="title"><a href="/goods/index/id/21391">齐心(COMIX)BP102R
+                                        防滑握手圆珠笔0.7mm 60支装 蓝色 新老包装随机</a></p>
+                                        <p class="price">
+                                            ￥24.80</p>
+                                        <p class="intro">齐心(COMIX)BP102R 防滑握手圆珠笔0.7mm 60支装 蓝色 新老包装随机</p></div>
+                                </div>
+                                <div class="item-block">
+                                    <div class="img"><a href="/goods/index/id/21391"><img class="lazy"
+                                                                                          alt="齐心(COMIX)BP102R 防滑握手圆珠笔0.7mm 60支装 蓝色 新老包装随机"
+                                                                                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+                                                                                          data-original="http://eshop.zte.com.cn:80/jd-img/vc/jfs/t1903/333/1403448857/146203/4704f06e/569ca244N8d28e92c.jpg"></a>
+                                    </div>
+                                    <div class="cf item-footer"><p class="title"><a href="/goods/index/id/21391">齐心(COMIX)BP102R
+                                        防滑握手圆珠笔0.7mm 60支装 蓝色 新老包装随机</a></p>
+                                        <p class="price">
+                                            ￥24.80</p></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div><!-- right end --></div>
+</div>
+<div class="main"></div>
+<div class="footer" id="footer">
+    <div class="click cf"><a href="/about/index/id/1"><i class="icon"><img alt=""
+                                                                           src="/static/images/home_bottom_0.png"></i>
+        <div class="text">关于我们</div>
+    </a><a href="/about/index/id/4"><i class="icon"><img alt="" src="/static/images/home_bottom_1.png"></i>
+        <div class="text">联系我们</div>
+    </a><a href="/about/index/id/5"><i class="icon"><img alt="" src="/static/images/home_bottom_2.png"></i>
+        <div class="text">版权说明</div>
+    </a><a href="/about/index/id/6"><i class="icon"><img alt="" src="/static/images/home_bottom_3.png"></i>
+        <div class="text">合作伙伴</div>
+    </a><a href="/about/index/id/7"><i class="icon"><img alt="" src="/static/images/home_bottom_4.png"></i>
+        <div class="text">售后保障</div>
+    </a></div>
+    <div class="f12 copyright mt15 tc">© 1998-2016 中兴通讯股份有限公司 eshop.zte.com.cn 版权所有 粤ICP备11108162号</div>
+</div>
+<p id="back-to-top" style="display: none;"><a href="#top"><span></span></a></p>
+<script src="script/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="/static/simple/js/jquery.message.js" type="text/javascript"></script>
+<script type="text/javascript">var search_url = "/list/index";
+var ajax_cart_url = "/cart/ajax_total_num";
+$(function () {
+    $('#search').click(function () {
+        var keyword = $.trim($('.keyword').val());
+        if (keyword != "") {
+            window.location.href = search_url + "?k=" + encodeURIComponent(keyword);
+        }
+    });
+
+    $(".keyword").focus(function () {
+        if (this.value == this.defaultValue) {
+
+        }
+    });
+
+    $(".keyword").blur(function () {
+        if (this.value == "") {
+            this.value = this.defaultValue;
+        }
+    });
+    $(".kf54kefuqqbottom").html("<img src='/static/img/kfbottom.jpg'>")
+
+});
+jQuery(document).ready(function ($) {
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 100) {
+            $("#back-to-top").fadeIn(800);
+        } else {
+            $("#back-to-top").fadeOut(800);
+        }
+    });
+    $("#back-to-top").click(function () {
+        $('body,html').animate({scrollTop: 0}, 500);
+        return false;
+    });
+    if ($(window).width() <= 1200) {
+        $("html").css({
+            width: '1200',
+            margin: '0 auto'
+        });
+
+    }
+    // var doc_h=$(document).height();
+    // var win_h=$(window).height()+35;
+    // console.log(doc_h+" "+win_h)
+    // if (doc_h<win_h) {
+    // 	$("#footer").addClass('fixed-bottom');
+    // }
+    if ($.browser.msie == true) {
+        $(".list li:nth-child(5n)").css('margin-right', '0');
+    }
+    $("head").append('<meta name="viewport" content="width=1200"/>')
+});
+
+var refresh_cart_num = function () {
+    $.post(ajax_cart_url, {}, function (d) {
+        if (d.status == 1) {
+            $('#ajax_cart_num').text("" + d.num + "")
+        }
+    }, 'json');
+};
+refresh_cart_num();
+
+function setCookie(name, value, time, path) {
+    var strsec = time * 1000;
+    var exp = new Date();
+    exp.setTime(exp.getTime() + strsec * 1);
+    document.cookie = name + "=" + escape(value) + ";path=/;expires=" + exp.toGMTString() + "";
+}
+
+$(".area_id").change(function (event) {
+    setCookie('city_id', $(this).val(), 30 * 86400);
+    window.event ? window.event.cancelBubble = true : event.stopPropagation();
+    location.reload();
+});
+
+</script>
+<script src="/static/simple/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<script src="/static/simple/js/jquery.alerts.js" type="text/javascript"></script>
+<script src="/static/simple/js/jquery.lazyload.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var sub_nav_b = $("#index_sub_nav").offset().top + $("#index_sub_nav").height();
+    var sub_nav_t = $("#index_sub_nav").offset().top;
+    var layer_h = $(".dorpdown-layer").height();
+
+    function sub_hovr(self) {
+        var layer_top = self.find('.dorpdown-layer').offset().top;
+        var layer_b = layer_top + layer_h;
+        var li_top = self.offset().top;
+        var dif = -100 + sub_nav_t - layer_top;
+        var dif_b = -102 + (sub_nav_b - layer_b);
+        if (layer_top < sub_nav_t) {
+            self.find('.dorpdown-layer').css('margin-top', dif);
+        }
+        if (layer_b > sub_nav_b) {
+            self.find('.dorpdown-layer').css('margin-top', dif_b);
+        }
+    }
+
+    $("#index_sub_nav").find('li').hover(function () {
+        $(this).addClass('hover').find('.dorpdown-layer').removeClass('hide');
+        //sub_hovr($(this))
+    }, function () {
+        $(this).removeClass('hover').find('.dorpdown-layer').addClass('hide');
+    })
+    $(function () {
+        $("img.lazy").lazyload();
+        $(".dorpdown-layer .a-block:nth-child(3n)").after('</br>').css('border', '0');
+        $(".dorpdown-layer .a-block:last-child").css('border', '0');
+    });
+
+    jQuery(".focus-box").slide({
+        mainCell: ".slider-pic",
+        titCell: ".slider-nav ul",
+        autoPage: "true",
+        autoPlay: true,
+        interTime: 4000,
+        delayTime: 1000,
+        startFun: function (i, c) {
+
+        }
+    });
+</script>
+<style type="text/css">
+    #__popConfirm {
+        width: 340px;
+        padding: 30px;
+    }
+
+    #__popWarnMsg {
+        padding: 10px 0 40px 0;
+        text-align: left;
+    }
+
+    #__popConfirm .__popBtn {
+        width: 140px;
+        background: none;
+    }
+
+    #__popBtnComfirm {
+        border: 1px solid #4878b8;
+        background: #90d050 ! important;
+        box-shadow: 0 1px 1px #5a5a5a inset;
+    }
+
+    #__popBtnCancel {
+        border: 1px solid #4878b8;
+        background: #f80000 ! important;
+        box-shadow: 0 1px 1px #5a5a5a inset;
+    }
+</style>
+<!--<script>
+    //如果session里面没有标识flag则执行first方法
+    if (!sessionStorage.getItem('flag')) {
+        first();
+    }
+
+    var zte_update_url = "/login/logout2";
+
+    //第一次进入
+    function first() {
+        $.Confirm.show({
+            content: "尊敬的用户：<br/><br/>&nbsp; &nbsp; &nbsp; &nbsp; 易办公商品仅作为企业在研发办公过程中所需的设备设施、备品备件、易耗品、办公文具等使用，业务单位在使用本平台下单订购时，需确保所订购商品为本部门研发办公自用。易办公商品不得作为对外部馈赠礼品。",
+            BtnComfirm: "是的，我会遵照执行。",
+            BtnCancel: "不，退出系统",
+            cancel: function () {
+                $.post(zte_update_url, function (d) {
+                    if (d.status == 1) {
+                        $.Alert("即将关闭窗口");
+                        setTimeout(function () {
+                            //sleep(1);
+                            window.opener = null;
+                            //window.opener=top;
+                            window.open("", "_self");
+                            window.close();
+                        }, 2000);
+                    } else {
+                        $.Alert(d.msg);
+                    }
+                }, 'json');
+
+            },
+            sure: function () {
+                //$.Alert("是的，我会遵照执行。");
+            }
+        });
+        sessionStorage.setItem('flag', 'sine');
+    }
+</script>-->
+</body>
+</html>
