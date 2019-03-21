@@ -139,5 +139,21 @@ nav .nav-shoppingcart-num{
 /*主容器*/
 .container.main{
     padding-top: 50px;
-    height: 5000px;
+}
+/*底部*/
+footer{
+    text-align: center;
+    padding: 50px;
+    background-color: #222;
+    color: white;
+    margin-top: 30px;
+    padding: 30px;
+}
+footer a{
+    margin: 0 10px;
+    color: white;
+}
+footer .copyright{
+    font-size: 12px;
+    margin: 0;
 }
