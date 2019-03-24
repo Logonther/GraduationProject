@@ -1,0 +1,34 @@
+.content{
+    padding-top: 30px;
+}
+/*路径导航*/
+.breadcrumb{
+    background-color: white;
+}
+/*导航组*/
+.nav-group{
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: white;
+    border-radius: 4px;
+}
+.nav-group li{
+    border-top: 1px dashed #dedede;
+    overflow: hidden;
+}
+.nav-group li:first-child{
+    border: none;
+}
+.nav-group li .title{
+    margin: 9px 0;
+    height: 18px;
+    line-height: 18px;
+}
+.nav-group li a{
+    margin: 9px 40px 9px 0;
+    height: 18px;
+    line-height: 18px;
+    display: block;
+    float: left;
+}
