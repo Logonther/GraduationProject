@@ -37,6 +37,8 @@
     background-color: white;
     overflow: hidden;
     padding: 10px;
+    display: block;
+    cursor: pointer;
 }
 .index-box-content li .good-content img{
     width: 100%;
