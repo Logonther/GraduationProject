@@ -1,0 +1,87 @@
+.content{
+    padding-top: 30px;
+}
+/*预览图*/
+#gallery img,#thumbs img{
+    width: 100%;
+}
+#thumbs .swiper-slide {
+    opacity: 0.4;
+}
+#thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+}
+/*信息*/
+.info{
+    background-color: white;
+}
+.info>div{
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.info .col-md-1{
+    padding: 0;
+}
+.info .name{
+    font-size: 18px;
+    color: #d9534f;
+    padding: 20px 0;
+    font-weight: bold;
+}
+.info .number .col-md-1{
+    margin-top: 7px;
+}
+
+
+.numbox{
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 35px;
+    padding: 0 40px;
+    overflow: hidden;
+    vertical-align: middle;
+    background-color: #efeff4;
+    border: solid 1px #bbb;
+    border-radius: 3px;
+}
+.numbox [class*=numbox-btn]{
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #555;
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 0;
+}
+.numbox .numbox-btn-minus{
+    left: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.numbox .numbox-btn-plus{
+    right: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.numbox .numbox-input{
+    display: inline-block;
+    width: 100%!important;
+    height: 100%;
+    padding: 0 3px!important;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    word-break: normal;
+    border: none!important;
+    border-right: solid 1px #ccc!important;
+    border-left: solid 1px #ccc!important;
+    border-radius: 0!important;
+}

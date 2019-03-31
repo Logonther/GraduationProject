@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>易办公</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/goodsDetail.css">
+</head>
+<body>
+<nav class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <div class="brand"></div>
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">个人中心</a></li>
+                <li><a href="#">收货地址</a></li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control nav-search" placeholder="请输入关键词，输入商品编码可直达详情页">
+                </div>
+                <button type="submit" class="btn btn-default fa fa-search"></button>
+            </form>
+            <ul class="nav navbar-nav navbar-right shopping-cart">
+                <li><a href="#" class="fa fa-shopping-cart">购物车<span class="nav-shoppingcart-num">6</span>件</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right login">
+                <li><a href="#">登录</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="floatingBox">
+    <a class="headimg" href="#"></a>
+    <ul class="rightNav">
+        <li><a href="#">个人中心</a></li>
+        <li><a href="#">注销</a></li>
+        <li><a href="#">返回顶部</a></li>
+    </ul>
+</div>
+<div class="container main">
+    <div class="row content">
+        <div class="col-md-5 pics">
+            <div class="swiper-container swiper-container-initialized swiper-container-horizontal" id="gallery">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/head%20portrait.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/head%20portrait.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/head%20portrait.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/head%20portrait.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/head%20portrait.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/head%20portrait.jpg">
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-button-black" tabindex="0" role="button" aria-label="Next slide"></div>
+                <div class="swiper-button-prev swiper-button-black" tabindex="0" role="button" aria-label="Previous slide"></div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+            </div>
+            <div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-thumbs" id="thumbs">
+                <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-405px, 0px, 0px);">
+                    <div class="swiper-slide">
+                        <img src="images/head%20portrait.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/head%20portrait.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/head%20portrait.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/head%20portrait.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/head%20portrait.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/head%20portrait.jpg">
+                    </div>
+                </div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+            </div>
+        </div>
+        <div class="col-md-7 info">
+            <div class="name">得力（deli）8740 磁性钢化1000mm*1500mm悬挂式办公/会议玻璃白板</div>
+            <div class="price">
+                <div class="col-md-1">价格：</div>
+                <div class="col-md-11">￥<span>68.00</span></div>
+            </div>
+            <div class="serial-number">
+                <div class="col-md-1">编号：</div>
+                <div class="col-md-11">000011</div>
+            </div>
+            <div class="brand">
+                <div class="col-md-1">品牌：</div>
+                <div class="col-md-11">得力</div>
+            </div>
+            <div class="number">
+                <div class="col-md-1">数量：</div>
+                <div class="col-md-11">
+                    <div class="numbox">
+                        <button class="numbox-btn-minus" type="button">-</button>
+                        <input class="numbox-input" type="text" value="1">
+                        <button class="numbox-btn-plus" type="button">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="inventory">
+                <div class="col-md-1">库存：</div>
+                <div class="col-md-11">233</div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <p class="map">
+        <a href="#">关于我们</a>
+        <a href="#">联系我们</a>
+        <a href="#">官方微博</a>
+        <a href="#">返回顶部</a>
+    </p>
+    <p class="copyright">Copyright © 2019 Easy Office. All rights reserved.</p>
+</footer>
+</body>
+</html>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/goodsDetail.js"></script>
