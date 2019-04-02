@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>易办公</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mui.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/base.css">
@@ -58,7 +59,7 @@
 </div>
 <div class="container main">
     <div class="row content">
-        <div class="col-md-5 pics">
+        <div class="col-md-4 pics">
             <div class="swiper-container swiper-container-initialized swiper-container-horizontal" id="gallery">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -108,7 +109,7 @@
                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
             </div>
         </div>
-        <div class="col-md-7 info">
+        <div class="col-md-8 info">
             <div class="name">得力（deli）8740 磁性钢化1000mm*1500mm悬挂式办公/会议玻璃白板</div>
             <div class="price">
                 <div class="col-md-1">价格：</div>
@@ -125,10 +126,12 @@
             <div class="number">
                 <div class="col-md-1">数量：</div>
                 <div class="col-md-11">
-                    <div class="numbox">
-                        <button class="numbox-btn-minus" type="button">-</button>
-                        <input class="numbox-input" type="text" value="1">
-                        <button class="numbox-btn-plus" type="button">+</button>
+                    <div class="mui-numbox" data-numbox-min='1' data-numbox-max='100'>
+                        <!-- "-"按钮，点击可减小当前数值 -->
+                        <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+                        <input class="mui-numbox-input" type="number" />
+                        <!-- "+"按钮，点击可增大当前数值 -->
+                        <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
                     </div>
                 </div>
             </div>
@@ -136,6 +139,12 @@
                 <div class="col-md-1">库存：</div>
                 <div class="col-md-11">233</div>
             </div>
+            <div class="buybuybuy">
+                <button type="button" class="mui-btn mui-btn-danger">加入购物车</button>
+            </div>
+        </div>
+        <div class="col-md-12 details">
+            <img src="images/head%20portrait.jpg">
         </div>
     </div>
 </div>
@@ -152,6 +161,7 @@
 </html>
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/mui.min.js"></script>
 <script src="js/swiper.min.js"></script>
 <script src="js/common.js"></script>
 <script src="js/goodsDetail.js"></script>

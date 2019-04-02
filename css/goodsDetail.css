@@ -2,6 +2,9 @@
     padding-top: 30px;
 }
 /*预览图*/
+#gallery{
+    margin-bottom: 10px;
+}
 #gallery img,#thumbs img{
     width: 100%;
 }
@@ -14,10 +17,14 @@
 /*信息*/
 .info{
     background-color: white;
+    height: 422px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .info>div{
     overflow: hidden;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    padding-left: 15px;
 }
 .info .col-md-1{
     padding: 0;
@@ -25,7 +32,13 @@
 .info .name{
     font-size: 18px;
     color: #d9534f;
-    padding: 20px 0;
+    padding: 20px 15px;
+    font-weight: bold;
+    background-color: #ddd;
+}
+.info .price .col-md-11{
+    color: #d9534f;
+    font-size: 18px;
     font-weight: bold;
 }
 .info .number .col-md-1{
@@ -84,4 +97,13 @@
     border-right: solid 1px #ccc!important;
     border-left: solid 1px #ccc!important;
     border-radius: 0!important;
+}
+/*详情*/
+.details{
+    background-color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+.details img{
+    width: 100%;
 }
