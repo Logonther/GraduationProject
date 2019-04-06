@@ -1,0 +1,101 @@
+.content.row{
+    padding-top: 30px;
+}
+/*表格*/
+table.table{
+    background-color: white;
+}
+input[type=checkbox]{
+    -webkit-appearance: checkbox;
+}
+
+thead td {
+    text-align: center;
+}
+
+tr.content td {
+    height: 80px;
+    padding: 6px;
+    line-height: 80px !important;
+    text-align: center;
+}
+
+.good {
+    overflow: hidden;
+}
+
+.good > div {
+    float: left;
+    margin-left: 30px;
+}
+
+.goodPic img {
+    vertical-align: middle;
+    height: 64px;
+}
+
+.goodInfo {
+    width: 240px;
+    height: 80px;
+    overflow: hidden;
+    line-height: 20px;
+    text-align: left;
+    padding: auto 0px;
+    margin-left: 9px;
+    position: relative;
+    display: table;
+    margin-right: -100px;
+}
+
+.goodInfo > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.goodName {
+    color: -webkit-link;
+}
+
+.point {
+    font-weight: bold;
+}
+
+.amount input {
+    width: 27px;
+}
+
+.goodPrice {
+    font-weight: bold;
+    color: #ff6600;
+}
+
+.amount img {
+    cursor: pointer;
+}
+
+.amount input {
+    text-align: center;
+}
+/*确认订单*/
+.confirm{
+    background-color: white;
+    padding: 15px;
+}
+.confirm>*{
+    display: inline-block;
+    vertical-align: middle;
+    height: 33px;
+    line-height: 33px;
+}
+.confirm .buy{
+    line-height: 1.42;
+    margin-left: 30px;
+}
+.confirm #delSelected{
+    margin-left: 30px;
+}
+.confirm #totalPrice{
+    color: #ff6600;
+    font-size: 18px;
+    font-weight: bold;
+}
