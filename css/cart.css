@@ -81,21 +81,46 @@ tr.content td {
     background-color: white;
     padding: 15px;
 }
-.confirm>*{
+.confirm>*,.submit>*{
     display: inline-block;
     vertical-align: middle;
     height: 33px;
     line-height: 33px;
 }
-.confirm .buy{
+.confirm .buy,.submit .buy{
     line-height: 1.42;
     margin-left: 30px;
 }
 .confirm #delSelected{
     margin-left: 30px;
 }
-.confirm #totalPrice{
+.confirm #totalPrice,.submit #submitTotalPrice{
     color: #ff6600;
     font-size: 18px;
     font-weight: bold;
+}
+/*模态框*/
+.confirm-box .title{
+    background-color: #EEF6FA;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.confirm-box .title a{
+    color: #36c;
+}
+.confirm-box .address,.confirm-box .department{
+    padding-left: 10px;
+}
+.confirm-box .address input[type=radio],.confirm-box .department input[type=radio]{
+    -webkit-appearance: radio;
+    margin-right: 10px;
+}
+.submit{
+    background-color: #EEF6FA;
+    padding: 15px;
+    height: 63px;
+    overflow: hidden;
 }

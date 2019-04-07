@@ -4,11 +4,11 @@ $(function () {
         $('input[type=checkbox]').prop('checked',$(this).is(':checked'));
         calculate();
     });
-    for (var i = 0; i < $('tr.content input[type=checkbox]').length; i++) {
-        $('tr.content input[type=checkbox]').eq(i).on('click',function () {
+    for (var i = 0; i < $('.goodsList tr.content input[type=checkbox]').length; i++) {
+        $('.goodsList tr.content input[type=checkbox]').eq(i).on('click',function () {
             var flag = true;
-            for (var i = 0; i < $('tr.content input[type=checkbox]').length; i++) {
-                if (!$('tr.content input[type=checkbox]').eq(i).prop('checked')) {
+            for (var i = 0; i < $('.goodsList tr.content input[type=checkbox]').length; i++) {
+                if (!$('.goodsList tr.content input[type=checkbox]').eq(i).prop('checked')) {
                     flag = false;
                     break;
                 }
@@ -21,11 +21,11 @@ $(function () {
 //计算价格、积分
     function calculate() {
         var totalPrice = 0;
-        for (var i = 0; i < $('tr.content').length; i++) {
-            $('tr.content').eq(i).find('.goodPrice').text($('tr.content').eq(i).find('.price').text() *
-                mui($('tr.content').eq(i).find('.mui-numbox')).numbox().getValue());
-            if ($('tr.content input[type=checkbox]').eq(i).prop('checked')) {
-                totalPrice += parseInt($('tr.content').eq(i).find('.goodPrice').text());
+        for (var i = 0; i < $('.goodsList tr.content').length; i++) {
+            $('.goodsList tr.content').eq(i).find('.goodPrice').text($('.goodsList tr.content').eq(i).find('.price').text() *
+                mui($('.goodsList tr.content').eq(i).find('.mui-numbox')).numbox().getValue());
+            if ($('.goodsList tr.content input[type=checkbox]').eq(i).prop('checked')) {
+                totalPrice += parseInt($('.goodsList tr.content').eq(i).find('.goodPrice').text());
             }
         }
         $('#totalPrice').text(totalPrice);
@@ -52,9 +52,9 @@ $(function () {
     $('#delSelected').on('click',function () {
         var r=confirm("你确定删除吗？");
         if (r==true){
-            for (var i = $('tr.content input[type=checkbox]').length-1; i >=0 ; i--) {
-                if ($('tr.content input[type=checkbox]').eq(i).prop('checked')) {
-                    delEle($('tr.content input[type=checkbox]').eq(i));
+            for (var i = $('.goodsList tr.content input[type=checkbox]').length-1; i >=0 ; i--) {
+                if ($('.goodsList tr.content input[type=checkbox]').eq(i).prop('checked')) {
+                    delEle($('.goodsList tr.content input[type=checkbox]').eq(i));
                 }
             }
             calculate();

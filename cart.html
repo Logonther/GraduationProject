@@ -59,7 +59,8 @@
 </div>
 <div class="container main">
     <div class="row content">
-        <table class="table table-hover table-bordered">
+        <!--商品列表-->
+        <table class="table table-hover table-bordered goodsList">
             <thead>
             <tr>
                 <td><input type="checkbox" class="checkAll">全选</td>
@@ -154,12 +155,116 @@
             </tr>
             </tbody>
         </table>
+        <!--确认-->
         <div class="col-md-12 confirm">
             <span class="checkall-bottom"><input type="checkbox" class="checkAll">全选</span>
             <a href="javascript:void(0)" id="delSelected">删除所选</a>
 
-            <button class="buy r_right">确认订单</button>
+            <button class="buy r_right" data-toggle="modal" data-target=".confirm-modal">确认订单</button>
             <span class="totalPrice r_right">商品总价（不含运费）：<span id="totalPrice">0</span>元</span>
+        </div>
+        <!--模态框-->
+        <div class="modal fade confirm-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="modalLabel">确认订单</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="confirm-box">
+                            <div class="title">收货地址<a href="#" class="r_right">管理收货地址</a></div>
+                            <ul class="address">
+                                <li><input type="radio" name="address">湖北省 武汉市 武昌区 XXX科技园XXXX6栋222 王只狼 收</li>
+                                <li><input type="radio" name="address">湖北省 武汉市 武昌区 XXX科技园XXXX6栋222 王只狼 收</li>
+                                <li><input type="radio" name="address">湖北省 武汉市 武昌区 XXX科技园XXXX6栋222 王只狼 收</li>
+                            </ul>
+                        </div>
+                        <div class="confirm-box">
+                            <div class="title">费用承担部门</div>
+                            <ul class="department">
+                                <li><input type="radio" name="department">XX公司XX部</li>
+                                <li><input type="radio" name="department">XX公司XX部</li>
+                                <li><input type="radio" name="department">XX公司XX部</li>
+                            </ul>
+                        </div>
+                        <div class="confirm-box">
+                            <div class="title">确认订单信息</div>
+                            <table class="table table-hover table-bordered">
+                                <thead>
+                                <tr>
+                                    <td>商品</td>
+                                    <td>单价（元）</td>
+                                    <td>数量</td>
+                                    <td>小计（元）</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="content">
+                                    <td>
+                                        <div class="good">
+                                            <div class="goodPic">
+                                                <img src="images/head%20portrait.jpg">
+                                            </div>
+                                            <div class="goodInfo">
+                                                <div>
+                                                    <div class="goodName"><a href="javascript:void(0)">得力（deli）8740 磁性钢化1000mm*1500mm悬挂式办公/会议玻璃白板</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="price">138.00</td>
+                                    <td class="amount">1</td>
+                                    <td class="goodPrice">138.00</td>
+                                </tr>
+                                <tr class="content">
+                                    <td>
+                                        <div class="good">
+                                            <div class="goodPic">
+                                                <img src="images/head%20portrait.jpg">
+                                            </div>
+                                            <div class="goodInfo">
+                                                <div>
+                                                    <div class="goodName"><a href="javascript:void(0)">得力（deli）8740 磁性钢化1000mm*1500mm悬挂式办公/会议玻璃白板</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="price">138.00</td>
+                                    <td class="amount">1</td>
+                                    <td class="goodPrice">138.00</td>
+                                </tr>
+                                <tr class="content">
+                                    <td>
+                                        <div class="good">
+                                            <div class="goodPic">
+                                                <img src="images/head%20portrait.jpg">
+                                            </div>
+                                            <div class="goodInfo">
+                                                <div>
+                                                    <div class="goodName"><a href="javascript:void(0)">得力（deli）8740 磁性钢化1000mm*1500mm悬挂式办公/会议玻璃白板</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="price">138.00</td>
+                                    <td class="amount">1</td>
+                                    <td class="goodPrice">138.00</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="col-md-12 submit">
+                                <button class="buy r_right">提交订单</button>
+                                <span class="totalPrice r_right">商品总价（不含运费）：<span id="submitTotalPrice">0</span>元</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

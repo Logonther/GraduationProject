@@ -175,3 +175,7 @@ footer .copyright{
 .mui-numbox{
     line-height: 1.42857143;
 }
+/*模态框*/
+.modal-footer{
+    overflow: hidden;
+}
