@@ -176,6 +176,6 @@ footer .copyright{
     line-height: 1.42857143;
 }
 /*模态框*/
-.modal-footer{
+.modal-body,.modal-footer{
     overflow: hidden;
 }
