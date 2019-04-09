@@ -1,0 +1,37 @@
+.content.row{
+    padding-top: 30px;
+}
+/*新建、已有部分*/
+.address-box{
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.address-box .title{
+    background-color: #EEF6FA;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*新建收货地址*/
+.must{
+    color: #ff3000;
+}
+.newAddress .col-md-1{
+    width: 10%;
+}
+.newAddress .col-md-11{
+    width: 90%;
+}
+.newAddress .col-md-offset-1{
+    margin-left: 10%;
+}
+#division select{
+    width: 150px;
+}
+#zipcode,#fullname,#phonenumber{
+    width: 150px;
+}
