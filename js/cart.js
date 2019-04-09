@@ -95,6 +95,12 @@ $(function () {
         if(n != $tr.length){
             console.log(111);
             $('.confirm-modal').modal('show');
+            /*计算选中的价格*/
+            var totalPrice = 0;
+            for (var i = 0; i < $('.confirm-modal tr.content').length; i++) {
+                totalPrice += parseFloat($('.confirm-modal tr.content').eq(i).find('.goodPrice').text());
+            }
+            $('#submitTotalPrice').text(parseFloat(totalPrice).toFixed(2));
         }
     })
     /*关闭模态框时清除内容*/
