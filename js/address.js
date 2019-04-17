@@ -6,7 +6,15 @@ $(function () {
         $(".address-form").data("bootstrapValidator").validate();//手动触发全部验证
         var flag = $(".address-form").data("bootstrapValidator").isValid();//获取当前表单验证状态
         if (flag) {//验证通过
-            console.log(123);
+            if ($('.newAddress').siblings('.title').text()=='新建收货地址'){
+                /* TODO */
+                console.log('新建成功');
+                window.location.reload();
+            } else{
+                /* TODO */
+                console.log('修改成功');
+                window.location.reload();
+            }
         }else{
             return false;
         }
@@ -79,4 +87,24 @@ $(function () {
             },
         }
     })
+    /*修改*/
+    $('.modify').on('click',function () {
+        $('.newAddress').siblings('.title').text('编辑收货地址');
+        $address = $(this).parent().parent();
+        $('#division').distpicker('destroy');
+        $('#division').distpicker({
+            province: $address.find('.division1').text(),
+            city: $address.find('.division2').text(),
+            district: $address.find('.division3').text()
+        });
+        $('#associate').val($address.find('.associate').text());
+        $('#zipcode').val($address.find('.zipcode').text());
+        $('#fullname').val($address.find('.fullname').text());
+        $('#phonenumber').val($address.find('.phonenumber').text());
+        /* TODO */
+    });
+    $('.delete').on('click',function () {
+        $(this).parent().parent().remove();
+        /* TODO */
+    });
 })
