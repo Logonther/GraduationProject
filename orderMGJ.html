@@ -60,13 +60,13 @@
     <div class="row content">
         <nav class="orderNav">
             <div class="myOrder col-md-4">
-                <a href="#" style="color: #1DB5FF">
+                <a href="#">
                     <i class="fa fa-list"></i>
                     <p>我的订单</p>
                 </a>
             </div>
             <div class="approve col-md-4">
-                <a href="#">
+                <a href="#" style="color: #1DB5FF">
                     <i class="fa fa-pencil-square-o"></i>
                     <p>我的审批单</p>
                 </a>
@@ -82,10 +82,7 @@
         </nav>
         <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-default active">
-                <input type="radio" name="orderType" id="optionAll" autocomplete="off" checked> 所有订单
-            </label>
-            <label class="btn btn-default">
-                <input type="radio" name="orderType" id="option1" autocomplete="off"> 待审批
+                <input type="radio" name="orderType" id="option1" autocomplete="off" checked> 待审批
             </label>
             <label class="btn btn-default">
                 <input type="radio" name="orderType" id="option2" autocomplete="off"> 待发货
@@ -95,9 +92,6 @@
             </label>
             <label class="btn btn-default">
                 <input type="radio" name="orderType" id="option4" autocomplete="off"> 已完成
-            </label>
-            <label class="btn btn-default">
-                <input type="radio" name="orderType" id="option5" autocomplete="off"> 已关闭
             </label>
         </div>
         <div class="orderlist">
@@ -121,6 +115,7 @@
                         <span class="address">收货信息：<span title="李大大 湖北省武汉市武昌区XXX科技园XXXX6栋222 湖北省 武汉市 武昌区 430000 13556666777 费用承担部门：XX公司XX部">李大大 湖北省武汉市武昌区XXX科技园XXXX6栋222 湖北省 武汉市 武昌区 430000 13556666777 费用承担部门：XX公司XX部</span></span>
                         <span class="orderPrice">订单总价：￥<span>276.00</span></span>
                         <span class="orderStatus">订单状态：<span>待审批</span></span>
+                        <span class="operation">操作：<button class="btn btn-danger">支付</button></span>
                     </td>
                 </tr>
                 <tr class="order-good">
@@ -168,7 +163,8 @@
                         <span class="orderID">订单ID：<span>2019020212345678</span></span>
                         <span class="address">收货信息：<span title="李大大 湖北省武汉市武昌区XXX科技园XXXX6栋222 湖北省 武汉市 武昌区 430000 13556666777 费用承担部门：XX公司XX部">李大大 湖北省武汉市武昌区XXX科技园XXXX6栋222 湖北省 武汉市 武昌区 430000 13556666777 费用承担部门：XX公司XX部</span></span>
                         <span class="orderPrice">订单总价：￥<span>276.00</span></span>
-                        <span class="orderStatus">订单状态：<span>待发货</span></span>
+                        <span class="orderStatus">订单状态：<span>待审批</span></span>
+                        <span class="operation">操作：<button class="btn btn-danger">关闭</button></span>
                     </td>
                 </tr>
                 <tr class="order-good">
@@ -216,7 +212,8 @@
                         <span class="orderID">订单ID：<span>2019020212345678</span></span>
                         <span class="address">收货信息：<span title="李大大 湖北省武汉市武昌区XXX科技园XXXX6栋222 湖北省 武汉市 武昌区 430000 13556666777 费用承担部门：XX公司XX部">李大大 湖北省武汉市武昌区XXX科技园XXXX6栋222 湖北省 武汉市 武昌区 430000 13556666777 费用承担部门：XX公司XX部</span></span>
                         <span class="orderPrice">订单总价：￥<span>276.00</span></span>
-                        <span class="orderStatus">订单状态：<span>待收货</span></span>
+                        <span class="orderStatus">订单状态：<span>待审批</span></span>
+                        <span class="operation">操作：<button class="btn btn-danger">关闭</button></span>
                     </td>
                 </tr>
                 <tr class="order-good">
@@ -264,55 +261,8 @@
                         <span class="orderID">订单ID：<span>2019020212345678</span></span>
                         <span class="address">收货信息：<span title="李大大 湖北省武汉市武昌区XXX科技园XXXX6栋222 湖北省 武汉市 武昌区 430000 13556666777 费用承担部门：XX公司XX部">李大大 湖北省武汉市武昌区XXX科技园XXXX6栋222 湖北省 武汉市 武昌区 430000 13556666777 费用承担部门：XX公司XX部</span></span>
                         <span class="orderPrice">订单总价：￥<span>276.00</span></span>
-                        <span class="orderStatus">订单状态：<span>已完成</span></span>
-                    </td>
-                </tr>
-                <tr class="order-good">
-                    <td>
-                        <div class="good">
-                            <div class="goodPic">
-                                <img src="images/head%20portrait.jpg">
-                            </div>
-                            <div class="goodInfo">
-                                <div>
-                                    <div class="goodName"><a href="javascript:void(0)">得力（deli）8740 磁性钢化1000mm*1500mm悬挂式办公/会议玻璃白板</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                    <td class="price">138.00</td>
-                    <td class="amount">1</td>
-                    <td class="goodPrice">138.00</td>
-                </tr>
-                <tr class="order-good">
-                    <td>
-                        <div class="good">
-                            <div class="goodPic">
-                                <img src="images/head%20portrait.jpg">
-                            </div>
-                            <div class="goodInfo">
-                                <div>
-                                    <div class="goodName"><a href="javascript:void(0)">得力（deli）8740 磁性钢化1000mm*1500mm悬挂式办公/会议玻璃白板</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                    <td class="price">138.00</td>
-                    <td class="amount">1</td>
-                    <td class="goodPrice">138.00</td>
-                </tr>
-                </tbody>
-
-                <tbody class="hr">
-                <tr></tr>
-                </tbody>
-                <tbody class="order">
-                <tr class="order-content">
-                    <td colspan="4">
-                        <span class="orderID">订单ID：<span>2019020212345678</span></span>
-                        <span class="address">收货信息：<span title="李大大 湖北省武汉市武昌区XXX科技园XXXX6栋222 湖北省 武汉市 武昌区 430000 13556666777 费用承担部门：XX公司XX部">李大大 湖北省武汉市武昌区XXX科技园XXXX6栋222 湖北省 武汉市 武昌区 430000 13556666777 费用承担部门：XX公司XX部</span></span>
-                        <span class="orderPrice">订单总价：￥<span>276.00</span></span>
-                        <span class="orderStatus">订单状态：<span>已关闭</span></span>
+                        <span class="orderStatus">订单状态：<span>待审批</span></span>
+                        <span class="operation">操作：<button class="btn btn-danger">关闭</button></span>
                     </td>
                 </tr>
                 <tr class="order-good">
@@ -388,4 +338,4 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrapValidator.min.js"></script>
 <script src="js/common.js"></script>
-<script src="js/orderList.js"></script>
+<script src="js/orderMGJ.js"></script>
